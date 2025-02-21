@@ -14,5 +14,22 @@ public class IndexController {
         model.addAttribute("mensaje", "Bienvenido a la página de videojuegos");
         return "index";
     }
+    @GetMapping("/contact")
+    public String  Contacto(Model model){
+        return "contact";
+    }
+    @GetMapping("/bot")
+    public String bot(Model model){
+        return "Bot";
+    }
+    @GetMapping("/about")
+    public String about(Model model){
+        return "about";
+    }
+    @GetMapping("/catalogo")
+    public String login(Model model){
+        return "catalogo";
+    }
+    
 
 }
